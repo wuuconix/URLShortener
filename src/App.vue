@@ -87,11 +87,24 @@ html, body, #app {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+@media screen and (min-width: 650px){
+    .box {
+        width: 620px;
+        margin-top: -10em;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .box {
+        width: 95%;
+        margin-top: -5em;
+        padding: 25px;
+    }
+}
+
 .box {
-    width: 620px;
     background-color: white;
-    margin-top: -10em;
-    padding: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
